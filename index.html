@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171717" />
+    <title>FuryTalks — Real Stories. Bold Ideas. Lasting Impact.</title>
+    <meta name="description" content="FuryTalks is a platform for real-life journeys, powerful ideas, and meaningful experiences. Discover upcoming events, stories, talks, and ways to partner." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="FuryTalks" />
+    <meta property="og:description" content="Real Stories. Bold Ideas. Lasting Impact. Discover upcoming FuryTalks events, stories, talks, and ways to partner." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FuryTalks" />
+    <meta name="twitter:description" content="Real Stories. Bold Ideas. Lasting Impact. Discover upcoming FuryTalks events, stories, talks, and ways to partner." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- styles.css is the compiled stylesheet of the original site (fonts, Tailwind utilities, custom rules). -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/screens.css" />
+    <link rel="stylesheet" href="css/panels.css" />
+  </head>
+  <body>
+    <div id="root">
+      <main class="site-shell" id="app">
+        <header class="absolute inset-x-0 top-0 z-20 text-[#f5f2ec]">
+          <div class="wrap flex h-[84px] items-center justify-between border-b border-white/30">
+            <a href="#top" aria-label="FuryTalks home" class="flex items-center gap-3"><span class="grid h-8 w-8 place-items-center bg-[#c9271e] text-[13px] font-bold tracking-[-.08em]">FT</span><span class="text-[12px] font-semibold uppercase tracking-[.18em]">FuryTalks</span></a><span class="hidden font-mono text-[9px] uppercase tracking-[.17em] text-white/70 md:block">A room for what matters</span><button type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation" class="focus-ring flex min-h-11 items-center gap-3 border border-white/55 px-4 text-[10px] font-semibold uppercase tracking-[.15em] hover:bg-white hover:text-[#151515]">Menu<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button>
+          </div>
+        </header>
+        <div id="site-navigation" hidden class="menu-panel fixed inset-0 z-30 flex flex-col bg-[#171717] text-[#f5f2ec]" role="dialog" aria-modal="true" aria-label="Site navigation">
+          <div class="wrap flex h-[84px] items-center justify-between border-b border-white/25">
+            <a href="#top" class="text-[12px] font-semibold uppercase tracking-[.18em]">FuryTalks</a><button type="button" aria-label="Close navigation menu" class="focus-ring flex min-h-11 items-center gap-3 border border-white/55 px-4 text-[10px] uppercase tracking-[.15em]">Close <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+          </div>
+          <nav class="wrap flex flex-1 flex-col justify-center py-12" aria-label="Main navigation">
+            <a data-menu-link="true" href="#top" class="group flex items-baseline gap-5 border-b border-white/20 py-4 text-[clamp(2.5rem,7vw,6.8rem)] leading-none tracking-[-.06em] hover:text-[#ef4337]"><span class="font-mono text-[11px] tracking-normal text-white/45">00</span>Home<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mb-1 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a data-menu-link="true" href="#about" class="group flex items-baseline gap-5 border-b border-white/20 py-4 text-[clamp(2.5rem,7vw,6.8rem)] leading-none tracking-[-.06em] hover:text-[#ef4337]"><span class="font-mono text-[11px] tracking-normal text-white/45">01</span>About FuryTalks<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mb-1 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a data-menu-link="true" href="#events" class="group flex items-baseline gap-5 border-b border-white/20 py-4 text-[clamp(2.5rem,7vw,6.8rem)] leading-none tracking-[-.06em] hover:text-[#ef4337]"><span class="font-mono text-[11px] tracking-normal text-white/45">02</span>Upcoming Events<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mb-1 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a data-menu-link="true" href="#watch" class="group flex items-baseline gap-5 border-b border-white/20 py-4 text-[clamp(2.5rem,7vw,6.8rem)] leading-none tracking-[-.06em] hover:text-[#ef4337]"><span class="font-mono text-[11px] tracking-normal text-white/45">03</span>Watch FuryTalks<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mb-1 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a data-menu-link="true" href="#attend" class="group flex items-baseline gap-5 border-b border-white/20 py-4 text-[clamp(2.5rem,7vw,6.8rem)] leading-none tracking-[-.06em] hover:text-[#ef4337]"><span class="font-mono text-[11px] tracking-normal text-white/45">04</span>Attend FuryTalks<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mb-1 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a data-menu-link="true" href="#speakers" class="group flex items-baseline gap-5 border-b border-white/20 py-4 text-[clamp(2.5rem,7vw,6.8rem)] leading-none tracking-[-.06em] hover:text-[#ef4337]"><span class="font-mono text-[11px] tracking-normal text-white/45">05</span>Speakers<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mb-1 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a data-menu-link="true" href="#contact" class="group flex items-baseline gap-5 border-b border-white/20 py-4 text-[clamp(2.5rem,7vw,6.8rem)] leading-none tracking-[-.06em] hover:text-[#ef4337]"><span class="font-mono text-[11px] tracking-normal text-white/45">06</span>Contact FuryTalks<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mb-1 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+          </nav>
+          <div class="wrap pb-8 font-mono text-[9px] uppercase tracking-[.15em] text-white/50">Real Stories. Bold Ideas. Lasting Impact.</div>
+        </div>
+        <section id="top" class="hero relative flex items-end text-[#f5f2ec]" style="background-image: url('images/hero-stage.jpg');">
+          <div class="wrap relative z-[1] pb-16 pt-36 md:pb-20">
+            <p class="eyebrow mb-8 text-white/75">A live storytelling gathering</p>
+            <h1 class="hero-title font-semibold uppercase">
+              <span class="fury">Fury</span><span class="talks">Talks</span>
+            </h1>
+            <div class="mt-9 flex max-w-[760px] flex-col justify-between gap-8 border-t border-white/45 pt-5 md:flex-row md:items-end">
+              <div>
+                <p class="mb-3 text-[15px] font-medium tracking-[.015em] md:text-[17px]">Real Stories. Bold Ideas. Lasting Impact.</p>
+                <p class="mb-4 max-w-[470px] text-sm leading-6 text-white/75">A platform where founders share their journeys, challenges, and the stories behind their success.</p>
+                <p class="mb-0 max-w-[470px] text-sm leading-6 text-white/75">Connect with inspiring minds, discover opportunities, and turn bold ideas into reality.</p>
+              </div>
+              <a href="#about" class="outline-button inline-flex w-fit min-h-12 items-center gap-5 border border-white/70 px-5 text-[10px] font-semibold uppercase tracking-[.15em]">Discover FuryTalks <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></a>
+            </div>
+            <p class="eyebrow mt-12 text-white/55">The first gathering is coming soon</p>
+          </div>
+          <div class="absolute right-8 top-1/2 hidden -translate-y-1/2 rotate-90 font-mono text-[9px] uppercase tracking-[.2em] text-white/60 xl:block">Listen closely · Speak honestly</div>
+        </section>
+        <section id="about" class="bg-[#f7f4ef] py-24 md:py-36">
+          <div class="wrap grid items-center gap-12 md:grid-cols-[.86fr_1.14fr] md:gap-20">
+            <div>
+              <p class="eyebrow mb-8 flex items-center gap-3 text-[#c9271e]">
+                <span class="h-[1px] w-8 bg-[#c9271e]"></span>01 / The reason</p>
+              <h2 class="serif mb-8 max-w-[590px] text-[clamp(2.9rem,5.8vw,5.7rem)] leading-[.99] tracking-[-.055em]">Every life has a story worth <em class="font-medium">hearing.</em>
+              </h2>
+              <p class="max-w-[480px] text-[15px] leading-7 text-[#46433f]">FuryTalks is a platform where founders and entrepreneurs share their real stories of success, failure, struggles, and achievements. We bring speakers and students together so people can learn from each other's experiences and get inspired to do something meaningful.</p>
+              <p class="mt-5 max-w-[480px] text-[15px] leading-7 text-[#46433f]">Through FuryTalks, students can connect with founders, discover internships and project opportunities, and learn about different career paths. Speakers can share their journeys, connect with talented students, grow their community, and find people who may join them in their future projects.</p>
+              <h2 style="text-align: center; transform: translateX(-20px); margin-top: 24px; width: 100%;">
+                One Platform. Real Stories. New Opportunities.
+                </h2>
+              <a href="#information" class="text-link mt-8 inline-flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[.15em]">Explore FuryTalks <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+            </div>
+            <figure class="image-frame m-0 aspect-[.92] md:aspect-[.92]">
+              <img alt="An empty auditorium waiting for its first FuryTalks gathering" loading="lazy" src="images/auditorium.jpg">
+              <figcaption class="absolute bottom-0 left-0 right-0 flex items-end justify-between bg-gradient-to-t from-black/65 to-transparent px-5 pb-5 pt-16 text-white">
+                <span class="eyebrow">A space to listen</span><span class="font-mono text-[9px] uppercase tracking-[.1em]">FuryTalks · Soon</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section id="information" class="bg-[#f7f4ef] py-24 md:py-32">
+          <div class="wrap">
+            <div class="mb-12 grid gap-6 md:grid-cols-[.85fr_1.15fr] md:items-end">
+              <div>
+                <p class="eyebrow mb-7 flex items-center gap-3 text-[#c9271e]">
+                  <span class="h-[1px] w-8 bg-[#c9271e]"></span>Discover FuryTalks</p>
+                <h2 class="serif mb-0 text-[clamp(3rem,6vw,5.7rem)] leading-[.96] tracking-[-.055em]">Ideas worth<br>coming <em>closer to.</em>
+                </h2>
+              </div>
+              <p class="mb-1 max-w-[500px] text-sm leading-7 text-[#46433f] md:justify-self-end">Find out what FuryTalks is about, discover the stories and events ahead, or get in touch with our team. <a href="#stories" class="text-link text-[#c9271e]">Read about the stories</a>.</p>
+            </div>
+            <div class="grid gap-x-12 md:grid-cols-2">
+              <article data-card-link class="group flex min-h-[205px] flex-col justify-between border-t border-[#171717]/25 py-7 md:py-9">
+                <div>
+                  <p class="eyebrow mb-5 text-[#c9271e]">01 / FuryTalks</p>
+                  <h3 class="serif mb-3 text-3xl leading-tight tracking-[-.03em] transition-colors duration-200 group-hover:text-[#c9271e] md:text-[2.1rem]">About FuryTalks</h3>
+                  <p class="mb-0 max-w-[510px] text-sm leading-6 text-[#4b4843]">Learn about FuryTalks, our vision, our mission, and our commitment to sharing powerful ideas and inspiring conversations.</p>
+                </div>
+                <a href="#top" data-scroll="top" class="text-link mt-7 inline-flex w-fit items-center gap-2 text-[10px] font-semibold uppercase tracking-[.12em]">Explore FuryTalks<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+              </article>
+              <article id="events" data-acc class="group flex min-h-[205px] flex-col border-t border-[#171717]/25 py-7 md:py-9">
+                <div class="ft-acc-head flex flex-1 flex-col justify-between" data-acc-head>
+                  <div>
+                    <p class="eyebrow mb-5 text-[#c9271e]">02 / FuryTalks</p>
+                    <h3 class="serif mb-3 text-3xl leading-tight tracking-[-.03em] transition-colors duration-200 group-hover:text-[#c9271e] md:text-[2.1rem]">Upcoming Events</h3>
+                    <p class="mb-0 max-w-[510px] text-sm leading-6 text-[#4b4843]">Discover upcoming FuryTalks events, meet inspiring speakers, and join conversations that encourage new ideas.</p>
+                  </div>
+                  <button type="button" class="text-link mt-7 inline-flex w-fit items-center gap-2 text-[10px] font-semibold uppercase tracking-[.12em]" data-acc-toggle aria-expanded="false" aria-controls="events-panel">Explore Upcoming Events<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+                </div>
+                <div id="events-panel" class="ft-acc-panel" role="region" aria-labelledby="panel-events-title" inert>
+                  <div class="ft-acc-inner">
+                    <div class="ft-acc-body ft-panel">
+                      <div class="ft-panel-body">
+                        <h2 id="panel-events-title" class="serif">Upcoming Events</h2>
+                        <div id="events-list" class="ft-events-list"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article id="watch" data-acc class="group flex min-h-[205px] flex-col border-t border-[#171717]/25 py-7 md:py-9">
+                <div class="ft-acc-head flex flex-1 flex-col justify-between" data-acc-head>
+                  <div>
+                    <p class="eyebrow mb-5 text-[#c9271e]">03 / FuryTalks</p>
+                    <h3 class="serif mb-3 text-3xl leading-tight tracking-[-.03em] transition-colors duration-200 group-hover:text-[#c9271e] md:text-[2.1rem]">Watch FuryTalks</h3>
+                    <p class="mb-0 max-w-[510px] text-sm leading-6 text-[#4b4843]">Explore inspiring talks, meaningful conversations, and memorable moments from FuryTalks events.</p>
+                  </div>
+                  <button type="button" class="text-link mt-7 inline-flex w-fit items-center gap-2 text-[10px] font-semibold uppercase tracking-[.12em]" data-acc-toggle aria-expanded="false" aria-controls="watch-panel">Browse FuryTalks Videos<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+                </div>
+                <div id="watch-panel" class="ft-acc-panel" role="region" aria-labelledby="panel-watch-title" inert>
+                  <div class="ft-acc-inner">
+                    <div class="ft-acc-body ft-panel">
+                      <div class="ft-panel-body">
+                        <h2 id="panel-watch-title" class="serif">Watch FuryTalks</h2>
+                        <p class="ft-subhead">The Stage Ends. The Story Lives On.</p>
+                        <p class="ft-copy">Discover inspiring founder journeys, real startup experiences, and conversations that go beyond the stage.</p>
+                        <p class="ft-copy">Watch, learn, and get inspired by stories worth sharing.</p>
+                        <h3 class="eyebrow ft-sub">YouTube</h3>
+                        <div id="video-gallery"></div>
+                        <h3 class="eyebrow ft-sub">Photo gallery</h3>
+                        <div id="photo-gallery"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article id="attend" data-acc class="group flex min-h-[205px] flex-col border-t border-[#171717]/25 py-7 md:py-9">
+                <div class="ft-acc-head flex flex-1 flex-col justify-between" data-acc-head>
+                  <div>
+                    <p class="eyebrow mb-5 text-[#c9271e]">04 / FuryTalks</p>
+                    <h3 class="serif mb-3 text-3xl leading-tight tracking-[-.03em] transition-colors duration-200 group-hover:text-[#c9271e] md:text-[2.1rem]">Attend FuryTalks</h3>
+                    <p class="mb-0 max-w-[510px] text-sm leading-6 text-[#4b4843]">Join our events, connect with creative minds, and experience inspiring ideas and conversations.</p>
+                  </div>
+                  <button type="button" class="text-link mt-7 inline-flex w-fit items-center gap-2 text-[10px] font-semibold uppercase tracking-[.12em]" data-acc-toggle aria-expanded="false" aria-controls="attend-panel">Attend FuryTalks<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+                </div>
+                <div id="attend-panel" class="ft-acc-panel" role="region" aria-labelledby="panel-attend-title" inert>
+                  <div class="ft-acc-inner">
+                    <div class="ft-acc-body ft-panel">
+                      <div class="ft-panel-body">
+                        <div class="ft-panel-split">
+                          <div>
+                            <h2 id="panel-attend-title" class="serif">Attend FuryTalks</h2>
+                            <p class="ft-subhead">Be There. Be Inspired. Be Connected.</p>
+                            <p class="ft-copy">Join a community of ambitious students, founders, and innovators. Experience inspiring conversations, discover fresh ideas, and connect with people who share your ambition.</p>
+                            <div id="attend-details"></div>
+                            <p class="ft-note">Submitting this form registers your interest only. It does not automatically guarantee admission to the event.</p>
+                          </div>
+                          <form id="attend-form" class="ft-form ft-form-dark" data-kind="attend" novalidate aria-label="Attend FuryTalks registration">
+                            <div class="ft-hp" aria-hidden="true">
+                              <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                            </div>
+                            <div class="ft-field">
+                              <label for="att-name">Full Name</label><input id="att-name" name="name" type="text" autocomplete="name" data-rule="name" data-label="Full Name"  required aria-required="true" aria-describedby="att-name-err" aria-invalid="false">
+                              <p class="ft-error" id="att-name-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="att-email">Email Address</label><input id="att-email" name="email" type="email" autocomplete="email" data-rule="email" data-label="Email Address"  required aria-required="true" aria-describedby="att-email-err" aria-invalid="false">
+                              <p class="ft-error" id="att-email-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="att-phone">Phone Number</label><input id="att-phone" name="phone" type="tel" inputmode=tel autocomplete="tel" data-rule="phone" data-label="Phone Number"  required aria-required="true" aria-describedby="att-phone-err" aria-invalid="false">
+                              <p class="ft-error" id="att-phone-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="att-org">College/Organization</label><input id="att-org" name="org" type="text" autocomplete="organization" data-rule="text" data-label="College/Organization"  required aria-required="true" aria-describedby="att-org-err" aria-invalid="false">
+                              <p class="ft-error" id="att-org-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="att-msg">Message <span class="ft-optional">(optional)</span></label><textarea id="att-msg" name="message" data-rule="area" data-label="Message" maxlength="500" data-max="500"  aria-describedby="att-msg-err" aria-invalid="false"></textarea>
+                              <p class="ft-error" id="att-msg-err" aria-live="polite"></p>
+                            </div>
+                            <button type="submit" class="ft-submit outline-button">Register Interest</button>
+                            <div class="ft-status" role="status" aria-live="polite"></div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article id="speakers" data-acc class="group flex min-h-[205px] flex-col border-t border-[#171717]/25 py-7 md:py-9">
+                <div class="ft-acc-head flex flex-1 flex-col justify-between" data-acc-head>
+                  <div>
+                    <p class="eyebrow mb-5 text-[#c9271e]">05 / FuryTalks</p>
+                    <h3 class="serif mb-3 text-3xl leading-tight tracking-[-.03em] transition-colors duration-200 group-hover:text-[#c9271e] md:text-[2.1rem]">Speakers</h3>
+                    <p class="mb-0 max-w-[510px] text-sm leading-6 text-[#4b4843]">Share your journey on the FuryTalks stage and meet the speakers behind the stories.</p>
+                  </div>
+                  <button type="button" class="text-link mt-7 inline-flex w-fit items-center gap-2 text-[10px] font-semibold uppercase tracking-[.12em]" data-acc-toggle aria-expanded="false" aria-controls="speakers-panel">Speak at FuryTalks<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+                </div>
+                <div id="speakers-panel" class="ft-acc-panel" role="region" aria-labelledby="panel-speakers-title" inert>
+                  <div class="ft-acc-inner">
+                    <div class="ft-acc-body ft-panel">
+                      <div class="ft-panel-body">
+                        <div class="ft-panel-split">
+                          <div>
+                            <h2 id="panel-speakers-title" class="serif">Speak at FuryTalks</h2>
+                            <p class="ft-subhead">Your Story Deserves to Be Heard.</p>
+                            <p class="ft-copy">Share your journey, challenges, experiences, and lessons with an audience eager to learn and grow.</p>
+                            <p class="ft-copy">FuryTalks aims to help speakers connect with students, inspire future entrepreneurs, and extend the reach of their stories through event photography and video content.</p>
+                            <p class="ft-copy">Selected event videos may be published on the FuryTalks YouTube channel to reach a wider audience.</p>
+                            <p class="ft-note">Applications are subject to review and selection. Submitting an application does not guarantee a speaking opportunity.</p>
+                          </div>
+                          <form id="speaker-form" class="ft-form ft-form-dark" data-kind="speaker" novalidate aria-label="Speaker application">
+                            <div class="ft-hp" aria-hidden="true">
+                              <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                            </div>
+                            <div class="ft-field">
+                              <label for="spk-name">Full Name</label><input id="spk-name" name="name" type="text" autocomplete="name" data-rule="name" data-label="Full Name"  required aria-required="true" aria-describedby="spk-name-err" aria-invalid="false">
+                              <p class="ft-error" id="spk-name-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="spk-email">Email Address</label><input id="spk-email" name="email" type="email" autocomplete="email" data-rule="email" data-label="Email Address"  required aria-required="true" aria-describedby="spk-email-err" aria-invalid="false">
+                              <p class="ft-error" id="spk-email-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="spk-phone">Phone Number</label><input id="spk-phone" name="phone" type="tel" inputmode=tel autocomplete="tel" data-rule="phone" data-label="Phone Number"  required aria-required="true" aria-describedby="spk-phone-err" aria-invalid="false">
+                              <p class="ft-error" id="spk-phone-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="spk-org">Company/Organization</label><input id="spk-org" name="org" type="text" autocomplete="organization" data-rule="text" data-label="Company/Organization"  required aria-required="true" aria-describedby="spk-org-err" aria-invalid="false">
+                              <p class="ft-error" id="spk-org-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="spk-role">Designation/Role</label><input id="spk-role" name="role" type="text" autocomplete="organization-title" data-rule="text" data-label="Designation/Role"  required aria-required="true" aria-describedby="spk-role-err" aria-invalid="false">
+                              <p class="ft-error" id="spk-role-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="spk-li">LinkedIn Profile <span class="ft-optional">(optional)</span></label><input id="spk-li" name="linkedin" type="text" autocomplete="url" data-rule="linkedin" data-label="LinkedIn Profile"  aria-describedby="spk-li-err" aria-invalid="false">
+                              <p class="ft-error" id="spk-li-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="spk-topic">Topic You Want to Speak About</label><input id="spk-topic" name="topic" type="text" autocomplete="" data-rule="text" data-label="Topic You Want to Speak About" maxlength="150" data-min="3" data-max="150"  required aria-required="true" aria-describedby="spk-topic-err" aria-invalid="false">
+                              <p class="ft-error" id="spk-topic-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="spk-bio">Short Bio or Your Journey</label><textarea id="spk-bio" name="bio" data-rule="area" data-label="Short Bio or Your Journey" maxlength="1000" data-min="20" data-max="1000"  required aria-required="true" aria-describedby="spk-bio-err" aria-invalid="false"></textarea>
+                              <p class="ft-error" id="spk-bio-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-field">
+                              <label for="spk-msg">Message <span class="ft-optional">(optional)</span></label><textarea id="spk-msg" name="message" data-rule="area" data-label="Message" maxlength="500" data-max="500"  aria-describedby="spk-msg-err" aria-invalid="false"></textarea>
+                              <p class="ft-error" id="spk-msg-err" aria-live="polite"></p>
+                            </div>
+                            <div class="ft-checkfield">
+                              <label><input type="checkbox" id="spk-consent" name="consent" data-rule="consent" data-label="Consent" required aria-required="true" aria-describedby="spk-consent-err" aria-invalid="false"><span>I agree that FuryTalks may photograph and record my talk, and that selected photos and videos may be published on FuryTalks channels, including YouTube, under arrangements agreed with the FuryTalks team.</span></label>
+                              <p class="ft-error" id="spk-consent-err" aria-live="polite"></p>
+                            </div>
+                            <button type="submit" class="ft-submit outline-button">Apply to Speak</button>
+                            <div class="ft-status" role="status" aria-live="polite"></div>
+                          </form>
+                        </div>
+                        <h3 class="eyebrow ft-sub ft-sub-lg">Our speakers</h3>
+                        <ul id="speaker-grid" class="ft-speaker-grid"></ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article data-card-link class="group flex min-h-[205px] flex-col justify-between border-t border-[#171717]/25 py-7 md:py-9">
+                <div>
+                  <p class="eyebrow mb-5 text-[#c9271e]">06 / FuryTalks</p>
+                  <h3 class="serif mb-3 text-3xl leading-tight tracking-[-.03em] transition-colors duration-200 group-hover:text-[#c9271e] md:text-[2.1rem]">Contact FuryTalks</h3>
+                  <p class="mb-0 max-w-[510px] text-sm leading-6 text-[#4b4843]">Get in touch with our team for event inquiries, collaborations, partnerships, and other questions.</p>
+                </div>
+                <a href="#contact" data-scroll="contact" class="text-link mt-7 inline-flex w-fit items-center gap-2 text-[10px] font-semibold uppercase tracking-[.12em]">Contact Us<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section id="stories" class="bg-[#171717] py-24 text-[#f7f4ef] md:py-36">
+          <div class="wrap">
+            <div class="grid gap-10 md:grid-cols-[.9fr_1.1fr] md:items-end">
+              <div>
+                <p class="eyebrow mb-8 flex items-center gap-3 text-[#ef5146]">
+                  <span class="h-[1px] w-8 bg-[#ef5146]"></span>03 / The stories</p>
+                <h2 class="serif mb-0 max-w-[610px] text-[clamp(3.3rem,7vw,7.3rem)] leading-[.88] tracking-[-.06em]">Not a highlight reel. <em>A human life.</em>
+                </h2>
+              </div>
+              <p class="mb-2 max-w-[410px] text-sm leading-7 text-white/65 md:justify-self-end">The first stories are still to come. We are making space for personal journeys, difficult chapters, hard-earned achievements, lessons learned, and ideas that deserve a wider audience.</p>
+            </div>
+            <div class="mt-16 grid gap-8 border-t border-white/30 pt-7 md:grid-cols-[.8fr_1.2fr] md:gap-20">
+              <div class="grid grid-cols-2 gap-x-5 gap-y-7 md:block">
+                <article class="border-b border-white/25 pb-5 md:mb-6">
+                  <p class="section-number mb-3 text-[#ef5146]">01 /</p>
+                  <h3 class="serif mb-2 text-[22px] leading-tight">The turning point</h3>
+                  <p class="mb-0 text-xs leading-5 text-white/55">A moment that changed the direction of a life—and what it took to meet it.</p>
+                </article>
+                <article class="border-b border-white/25 pb-5 md:mb-6">
+                  <p class="section-number mb-3 text-[#ef5146]">02 /</p>
+                  <h3 class="serif mb-2 text-[22px] leading-tight">The hard middle</h3>
+                  <p class="mb-0 text-xs leading-5 text-white/55">The challenge before the breakthrough, told without skipping the difficult parts.</p>
+                </article>
+                <article class="border-b border-white/25 pb-5 md:mb-6">
+                  <p class="section-number mb-3 text-[#ef5146]">03 /</p>
+                  <h3 class="serif mb-2 text-[22px] leading-tight">What stays with us</h3>
+                  <p class="mb-0 text-xs leading-5 text-white/55">Lessons learned through doing, failing, beginning again, and paying attention.</p>
+                </article>
+                <article class="border-b border-white/25 pb-5 md:mb-6">
+                  <p class="section-number mb-3 text-[#ef5146]">04 /</p>
+                  <h3 class="serif mb-2 text-[22px] leading-tight">An idea in motion</h3>
+                  <p class="mb-0 text-xs leading-5 text-white/55">A possibility worth sharing, and the questions it asks all of us to consider.</p>
+                </article>
+              </div>
+              <figure class="story-panel relative m-0 min-h-[370px] overflow-hidden p-8 md:min-h-[600px] md:p-14">
+                <img class="story-photo absolute inset-0 h-full w-full object-cover opacity-65 mix-blend-multiply" alt="A speaker's silhouette against the light of a stage, representing stories yet to be told" loading="lazy" src="images/hero-stage.jpg">
+                <div class="relative flex h-full min-h-[320px] flex-col justify-between md:min-h-[500px]">
+                  <span class="eyebrow">No names. No borrowed stories.</span>
+                  <p class="serif mb-0 max-w-[650px] text-[clamp(2.1rem,5vw,4.8rem)] leading-[1.02] tracking-[-.035em]">A real life is never just one thing.</p>
+                  <figcaption class="eyebrow mt-8 border-t border-white/50 pt-4">The spirit of FuryTalks</figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+
+
+<dialog id="speaker-dialog" class="ft-dialog" aria-label="Speaker biography">
+          <button type="button" class="ft-dialog-close" data-close>Close</button>
+          <div class="ft-dlg-body">
+            <img src="images/speakers/placeholder.svg" alt="">
+            <div class="ft-dlg-text">
+              <p class="eyebrow mb-4 text-[#ef5146]">Speaker</p>
+              <h3 class="serif"></h3>
+              <div class="ft-dlg-ig"></div>
+              <p class="ft-dlg-bio"></p>
+            </div>
+          </div>
+        </dialog>
+<dialog id="photo-dialog" class="ft-dialog ft-photo-dlg" aria-label="Photo">
+          <button type="button" class="ft-dialog-close" data-close>Close</button>
+          <figure style="margin:0">
+            <img src="" alt="">
+            <figcaption></figcaption>
+          </figure>
+        </dialog>
+        <footer id="contact" class="bg-[#f7f4ef] pb-7 pt-16 md:pt-24">
+          <div class="wrap">
+            <div class="grid gap-12 border-b border-[#171717]/30 pb-12 md:grid-cols-[1fr_1fr] md:pb-16">
+              <div>
+                <p class="eyebrow mb-6 text-[#c9271e]">The conversation starts here</p>
+                <a href="#top" class="inline-block text-[clamp(3.7rem,9vw,8rem)] font-semibold uppercase leading-[.8] tracking-[-.09em]">Fury<span class="text-[#c9271e]">Talks</span></a>
+              </div>
+              <div class="grid gap-8 sm:grid-cols-2">
+                <div>
+                  <p class="eyebrow mb-5 text-[#6b665f]">Find us</p>
+                  <ul id="footer-socials" class="m-0 list-none space-y-3 p-0">
+                    <li>
+                      <a class="footer-link text-sm" href="https://example.com/replace-with-furytalks-instagram" target="_blank" rel="noreferrer">Instagram<span class="ml-1 font-mono text-[9px] text-[#77716a]">(replace placeholder)</span></a>
+                    </li>
+                    <li>
+                      <a class="footer-link text-sm" href="https://example.com/replace-with-furytalks-linkedin" target="_blank" rel="noreferrer">LinkedIn<span class="ml-1 font-mono text-[9px] text-[#77716a]">(replace placeholder)</span></a>
+                    </li>
+                    <li>
+                      <a class="footer-link text-sm" href="https://example.com/replace-with-furytalks-youtube" target="_blank" rel="noreferrer">YouTube<span class="ml-1 font-mono text-[9px] text-[#77716a]">(replace placeholder)</span></a>
+                    </li>
+                    <li>
+                      <a class="footer-link text-sm" href="https://example.com/replace-with-whatsapp-community" target="_blank" rel="noreferrer">WhatsApp Community<span class="ml-1 font-mono text-[9px] text-[#77716a]">(replace placeholder)</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="eyebrow mb-5 text-[#6b665f]">Get in touch</p>
+                  <a id="footer-email" class="footer-link block text-sm" href="mailto:hello@example.com">hello@example.com<span class="mt-1 block font-mono text-[9px] text-[#77716a]">Placeholder · update before launch</span></a><a id="footer-phone" class="footer-link mt-4 block text-sm" href="tel:+910000000000">+91 00000 00000<span class="mt-1 block font-mono text-[9px] text-[#77716a]">Placeholder · update before launch</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col justify-between gap-3 pt-5 text-[9px] uppercase tracking-[.13em] text-[#6b665f] sm:flex-row">
+              <span>Real Stories. Bold Ideas. Lasting Impact.</span><span>FuryTalks · First gathering coming soon</span>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="js/data/site.js"></script>
+    <script src="js/data/events.js"></script>
+    <script src="js/data/media.js"></script>
+    <script src="js/data/speakers.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/media.js"></script>
+    <script src="js/speakers.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/router.js"></script>
+    </body>
+</html>
