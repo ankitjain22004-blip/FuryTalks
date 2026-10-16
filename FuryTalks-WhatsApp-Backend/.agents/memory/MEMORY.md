@@ -1,0 +1,1 @@
+- [FuryTalks enquiry delivery](furytalks-enquiry-delivery.md) — forms open WhatsApp click-to-chat; visitors send manually; no API or inquiry database.

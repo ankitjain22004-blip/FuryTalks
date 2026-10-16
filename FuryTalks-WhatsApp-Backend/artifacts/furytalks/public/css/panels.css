@@ -1,0 +1,51 @@
+/* Upcoming Events, Watch, Attend and Speakers sections. Dark theme, same fonts/colours as the site. */
+[data-panel]{cursor:pointer}
+.ft-panel-body{padding:0}
+.ft-panel h2{font-size:clamp(2.3rem,5.2vw,4.4rem);line-height:.95;letter-spacing:-.02em;font-weight:400;text-transform:uppercase;margin:0 0 1rem}
+.ft-subhead{font-family:var(--app-font-serif);font-style:italic;font-size:clamp(1.4rem,2.3vw,2rem);line-height:1.15;color:#ef5146;margin:0 0 1.25rem}
+.ft-copy{font-size:14px;line-height:1.75;color:rgba(255,255,255,.72);max-width:50ch;margin:0 0 1rem}
+.ft-note{border-left:2px solid #c9271e;padding-left:.9rem;font-size:13px;line-height:1.6;color:rgba(255,255,255,.78);margin:1.5rem 0 0;max-width:50ch}
+.ft-panel-split{display:grid;gap:2.5rem}
+.ft-panel .ft-sub{color:#ef5146;border-top-color:rgba(245,242,236,.24)}
+.ft-panel .ft-sub-lg{margin-top:clamp(3rem,6vw,5rem)}
+.ft-panel .ft-empty{color:#9b948b}
+.ft-panel .ft-caption{color:rgba(255,255,255,.65)}
+.ft-panel .ft-cat{color:#ef5146}
+.ft-panel .ft-speaker-grid{margin-top:1.75rem}
+.ft-panel #attend-details{margin:1.25rem 0 0;max-width:480px}
+.ft-panel #attend-details .ft-details>div:last-child{border-bottom:1px solid rgba(245,242,236,.24)}
+.ft-event{padding-top:1rem}
+.ft-event-label{color:#ef5146;margin:0 0 1rem}
+.ft-event-main .ft-details{margin:1.5rem 0 1.75rem;max-width:520px}
+.ft-event-main .ft-details>div:last-child{border-bottom:1px solid rgba(245,242,236,.24)}
+.ft-event-desc{margin:0 0 1rem}
+.ft-poster{margin:0;align-self:start;aspect-ratio:4/3}
+.ft-poster img{width:100%;height:100%;object-fit:cover;display:block}
+.ft-field textarea{width:100%;box-sizing:border-box;min-height:110px;padding:.8rem 1rem;background:transparent;color:inherit;border:1px solid rgba(245,242,236,.4);border-radius:2px;font:400 16px/1.5 var(--app-font-sans);resize:vertical}
+.ft-field textarea:hover{border-color:currentColor}
+.ft-field textarea[aria-invalid=true]{border-color:#ff7a70}
+.ft-optional{font-weight:400;opacity:.6;text-transform:none;letter-spacing:.04em}
+.ft-checkfield label{display:flex;gap:.8rem;align-items:flex-start;font-size:13px;line-height:1.6;color:rgba(255,255,255,.8);cursor:pointer}
+.ft-checkfield input{flex:none;width:20px;height:20px;margin-top:2px;accent-color:#c9271e}
+.ft-form-dark .ft-status{color:#f7f4ef}
+.ft-submit:disabled{opacity:.5;cursor:not-allowed}
+.ft-form-dark .ft-submit:not(:disabled):hover{background:#c9271e;border-color:#c9271e}
+@media (min-width:800px){.ft-panel-split{grid-template-columns:.9fr 1.1fr;gap:4rem}.ft-event{grid-template-columns:1.05fr .95fr}}
+
+/* inquiry forms: honeypot (hidden from people, bots fill it in) and status colours */
+.ft-hp{position:absolute!important;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.ft-form-dark .ft-status.is-error{color:#ff8a80}
+.ft-form-dark .ft-status.is-ok{color:#f7f4ef;border-left:2px solid #c9271e;padding-left:.9rem}
+.ft-form-dark .ft-status.is-ready{color:#f7f4ef;border-left:2px solid #7397af;padding-left:.9rem}
+/* Accordion: the four points (Events, Watch, Attend, Speakers) open their content inside themselves. */
+.ft-acc-head{cursor:pointer}
+[data-acc].is-open{grid-column:1/-1}
+[data-card-link]{cursor:pointer}
+.ft-acc-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s cubic-bezier(.2,.7,.2,1)}
+[data-acc].is-open .ft-acc-panel{grid-template-rows:1fr}
+.ft-acc-inner{overflow:hidden;min-height:0}
+.ft-acc-body{background:#171717;color:#f7f4ef;margin-top:1.75rem;padding:clamp(24px,4vw,56px) clamp(16px,3vw,40px) clamp(32px,5vw,64px)}
+.ft-acc-body.ft-panel .ft-panel-body{padding:0}
+[data-acc] [data-acc-toggle] svg{transition:transform .3s ease}
+[data-acc].is-open [data-acc-toggle] svg{transform:rotate(90deg)}
+@media (prefers-reduced-motion:reduce){.ft-acc-panel,[data-acc] [data-acc-toggle] svg{transition:none}}

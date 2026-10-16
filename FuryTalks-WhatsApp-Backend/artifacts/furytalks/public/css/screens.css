@@ -1,0 +1,19 @@
+/* Normal document scrolling: the whole page scrolls with mouse wheel, touchpad, keyboard and touch.
+   (This file used to lock the page to one screen at a time; that behaviour has been removed.) */
+html{height:auto;overflow-x:hidden;overflow-y:auto;scroll-behavior:smooth;scroll-padding-top:84px}
+body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:visible}
+.site-shell{display:block;height:auto;min-height:0;overflow:visible}
+/* every section sits in normal flow; no screen is hidden */
+section[id],footer[id]{position:relative}
+/* header: floats over the landing image, becomes a solid bar once the page is scrolled */
+.site-shell>header{position:fixed;left:0;right:0;top:0;z-index:20;background:transparent;transition:background-color .25s ease}
+.site-shell>header.is-scrolled{background:#171717}
+.hero{padding-bottom:0}
+/* the menu overlay scrolls inside itself and never chains scroll to (or locks) the page */
+#site-navigation{overscroll-behavior:contain}
+#site-navigation nav a{font-size:clamp(1.9rem,min(7vw,6.2vh),6.8rem);padding-top:.45rem;padding-bottom:.45rem}
+@media (max-height:560px){.site-shell>header .wrap{height:64px}html{scroll-padding-top:64px}}
+/* the four former panels (Events, Watch, Attend, Speakers) are now regular dark sections of the page */
+
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
